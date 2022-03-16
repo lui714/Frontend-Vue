@@ -1,7 +1,7 @@
 import App from './App.vue'
 import router from './router'
 import { createApp, provide, h } from 'vue'
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { DefaultApolloClient } from '@vue/apollo-composable';
 import 'jquery';
 import 'popper.js';
