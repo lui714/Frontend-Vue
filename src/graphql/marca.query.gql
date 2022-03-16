@@ -1,0 +1,6 @@
+query MarcaList {
+  marcasList {
+    idm
+    marca
+  }
+}

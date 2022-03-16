@@ -1,0 +1,13 @@
+query zapatoList {
+  zapatoList {
+    id
+    marca
+    modelo
+    publishedDate
+    longDescription
+    thumbnailUrl
+    precio
+    status
+    tallas
+  }
+}
