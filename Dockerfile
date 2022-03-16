@@ -3,7 +3,6 @@ ENV NODE_ENV production
 WORKDIR /app
 ADD . .
 RUN yarn install --include=dev
-RUN yarn global add @vue/cli
 RUN yarn run build
 
 
