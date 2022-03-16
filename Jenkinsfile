@@ -15,21 +15,21 @@ node {
     stage('Build y Push a DockerHub') {
         // Build and push the image
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
-            def app = docker.build("Koala361/proyecto-vue:${commit_id}", '.').push()
+            def app = docker.build("luisdocker361/proyecto-vue:${commit_id}", '.').push()
         }
         // Save previous id commit on file
         sh "echo ${commit_id} > .git/previous-id"
         // Delete image
-        sh "docker rmi Koala361/proyecto-vue:${commit_id}"
+        sh "docker rmi luisdocker361/proyecto-vue:${commit_id}"
     }
     stage('Correr contenedor') {
         // save image to constraint
-        def cont = docker.image("Koala361/proyecto-vue:${commit_id}")
+        def cont = docker.image("luisdocker361/proyecto-vue:${commit_id}")
         // Download image
         cont.pull()
         // Delete container if exists with same name
         sh "docker stop cont-vue || true && docker rm cont-vue || true"
         // Run container
-        sh "docker run -d --restart always -p 5434:80 -u root:root --name cont-vue Koala361/proyecto-vue:${commit_id}"
+        sh "docker run -d --restart always -p 5434:80 -u root:root --name cont-vue luisdocker361/proyecto-vue:${commit_id}"
     } 
 }
