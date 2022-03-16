@@ -1,3 +1,5 @@
+import gql from 'graphql-tag'
+export const zapatos = gql`
 query zapatoList {
   zapatoList {
     id
@@ -11,3 +13,4 @@ query zapatoList {
     tallas
   }
 }
+`

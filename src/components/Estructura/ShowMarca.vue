@@ -33,7 +33,7 @@
 import Header from "@/components/Estructura/Header";
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
-import { ShowMarca } from "../../graphql/filtrozapato";
+import { ShowMarca } from "../../graphql/filtrozapato.js";
 
 export default {
   name: "ShowMarca",

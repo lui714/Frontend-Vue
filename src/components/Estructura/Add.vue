@@ -97,7 +97,7 @@ import Add from "@/components/Estructura/Add";
 import Header from "@/components/Estructura/Header";
 import { useMutation } from "@vue/apollo-composable";
 import { useQuery, useResult } from "@vue/apollo-composable";
-import marcasListQuery from "../../graphql/marca.query.gql";
+import { marcas } from "../../graphql/marca.js";
 import { ref } from "vue";
 import gql from "graphql-tag";
 
@@ -110,7 +110,7 @@ export default {
   setup() {
     /* LISTADO DE MARCAS */
     const message = ref("hola sergio");
-    const { result } = useQuery(marcasListQuery);
+    const { result } = useQuery(marcas);
     const marcasList = useResult(result, null, (data) => data.marcasList);
 
     /* MUTACION DE INSERCCION DE UN ZAPATO */

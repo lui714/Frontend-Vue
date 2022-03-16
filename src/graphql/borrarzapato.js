@@ -1,3 +1,5 @@
+import gql from 'graphql-tag'
+export const borrarzapato = gql`
 mutation Mutation($deleteZapatoId: ID!) {
   deleteZapato(id: $deleteZapatoId) {
     status
@@ -17,3 +19,5 @@ mutation Mutation($deleteZapatoId: ID!) {
     }
   }
 }
+
+`

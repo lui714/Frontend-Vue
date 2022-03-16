@@ -1,3 +1,5 @@
+import gql from 'graphql-tag'
+export const zapato = gql`
 query Data($zapatoIdId: ID!) {
   zapatoId(id: $zapatoIdId) {
     data {
@@ -15,3 +17,4 @@ query Data($zapatoIdId: ID!) {
     }
   }
 }
+`

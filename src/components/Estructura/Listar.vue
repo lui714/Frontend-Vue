@@ -78,8 +78,8 @@
 import Listar from "@/components/Estructura/Listar";
 import Header from "@/components/Estructura/Header";
 import { useQuery, useResult } from "@vue/apollo-composable";
-import zapatoListQuery from "../../graphql/zapato.query.gql";
-import marcasListQuery from "../../graphql/marca.query.gql";
+import { zapatos } from "../../graphql/zapato.js";
+import { marcas } from "../../graphql/marca.js";
 
 export default {
   name: "Listar",
@@ -88,8 +88,8 @@ export default {
     Listar,
   },
   setup() {
-    const { result: resultz } = useQuery(zapatoListQuery);
-    const { result } = useQuery(marcasListQuery);
+    const { result: resultz } = useQuery(zapatos);
+    const { result } = useQuery(marcas);
     const zapatoList = useResult(resultz, null, (data) => data.zapatoList);
     const marcasList = useResult(result, null, (data) => data.marcasList);
     console.log(resultz, result);

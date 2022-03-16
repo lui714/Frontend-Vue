@@ -64,8 +64,8 @@ import Modificacion from "@/components/Estructura/Modificacion";
 import Header from "@/components/Estructura/Header";
 import { useMutation, useQuery, useResult } from "@vue/apollo-composable";
 import { ref } from "vue";
-import zapatoListQuery from "../../graphql/zapato.query.gql";
-import DeleteZapato from "../../graphql/borrarzapato.query.gql";
+import { zapatos } from "../../graphql/zapato.js";
+import { borrarzapato } from "../../graphql/borrarzapato.js";
 import gql from "graphql-tag";
 
 export default {
@@ -78,7 +78,7 @@ export default {
 
   setup() {
     const message = ref("hola sergio");
-    const { result } = useQuery(zapatoListQuery);
+    const { result } = useQuery(zapatos);
 
     // console.log(result)
     const zapatoList = useResult(result, null, (data) => data.zapatoList);
@@ -90,12 +90,12 @@ export default {
         { deleteZapatoId },
         {
           update: (store, {}) => {
-            const data = store.readQuery({ query: zapatoListQuery });
+            const data = store.readQuery({ query: borrarzapato });
             const updatedData = data.zapatoList.filter(
               (fil) => fil.deleteZapatoId !== deleteZapatoId
             );
             store.writeQuery({
-              query: zapatoListQuery,
+              query: zapatos,
               data: { zapatoList: updatedData },
             });
           },
