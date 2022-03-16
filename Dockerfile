@@ -2,7 +2,7 @@ FROM node:lts-alpine AS builder
 ENV NODE_ENV production
 WORKDIR /app
 ADD . .
-RUN yarn install --include=dev
+RUN yarn install --production=false
 RUN yarn run build
 
 
