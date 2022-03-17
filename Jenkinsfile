@@ -23,13 +23,13 @@ node {
         sh "docker rmi luisdocker361/proyecto-vue:${commit_id}"
     }
     stage('Correr contenedor') {
-        // save image to constraint
+        // guardar imagen en restricción
         def cont = docker.image("luisdocker361/proyecto-vue:${commit_id}")
-        // Download image
+        // Descargamos imagen
         cont.pull()
-        // Delete container if exists with same name
+        // Eliminar contenedor si existe con el mismo nombre
         sh "docker stop cont-vue || true && docker rm cont-vue || true"
-        // Run container
+        // Ejecutar contenedor
         sh "docker run -d --restart always -p 5434:80 -u root:root --name cont-vue luisdocker361/proyecto-vue:${commit_id}"
     } 
 }
