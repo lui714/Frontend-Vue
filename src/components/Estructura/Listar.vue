@@ -5,7 +5,7 @@
     </div>
     <div class="botonLateral">
       <a
-        class="btn btn-primary"
+        class="btn btn-secondary"
         data-bs-toggle="offcanvas"
         href="#offcanvasExample"
         role="button"

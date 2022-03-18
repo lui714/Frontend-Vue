@@ -1,231 +1,231 @@
-@import '~bootstrap/dist/css/bootstrap.css';
-.addSalir{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@import "~bootstrap/dist/css/bootstrap.css";
+.addSalir {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.add{
-    width: 10%;
-    padding-left: 1%;
-    display: flex;
-    align-items: center;
+.add {
+  width: 10%;
+  padding-left: 1%;
+  display: flex;
+  align-items: center;
 }
-.salir{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.salir {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#close{
-    width: 100%;
+#close {
+  width: 100%;
 }
-.form{
-    width: 100%;
-    height: 100%;
+.form {
+  width: 100%;
+  height: 100%;
 }
-.center{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.center {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-#inserccion{
-    width: 70%;
-    padding: 1%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    border: 3px solid;
-    border-color: black;
-    border-radius: 5px;
-    background-color: orange;
-    margin: 0;
+#inserccion {
+  width: 70%;
+  padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: orange;
+  margin: 0;
 }
-.login{
-    height: 38.6rem;
+.login {
+  height: 38.6rem;
 }
-.volver{
-    margin: 1%;
+.volver {
+  margin: 1%;
 }
-.card{
-    border-radius: 10px;
-    border-color: black;
-    border: 3px solid;
-    height: 100%;
+.card {
+  border-radius: 10px;
+  border-color: black;
+  border: 3px solid;
+  height: 100%;
 }
-.botonLateral{
-    margin: 1%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 20%;
+.botonLateral {
+  margin: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 20%;
 }
-.separacion{
-    margin-left: 1%;
+.separacion {
+  margin-left: 1%;
 }
-.boton{
-    margin-top: 1%;
+.boton {
+  margin-top: 1%;
 }
 .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
-.imagen{
-    height: 50%;
-    width: 50%;
-    margin: 0 auto;
-    padding: 5%;
+.imagen {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5%;
 }
-.principal{
-    padding: 1%;
-    width: 30%;
+.principal {
+  padding: 1%;
+  width: 30%;
 }
-.hola{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 100%;
+.hola {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
 }
-.titulo{
-    text-align: center;
-    color: white;
-    padding: 0.5%;
-    width: 90%;
-    height: 100%;
-    text-decoration: none;
+.titulo {
+  text-align: center;
+  color: white;
+  padding: 0.5%;
+  width: 90%;
+  height: 100%;
+  text-decoration: none;
 }
-a.btn-primary{
-    width: 37%;
+a.btn-primary {
+  width: 37%;
 }
-.adios{
-    margin-bottom: 3%;
+.adios {
+  margin-bottom: 3%;
 }
-.nav-header{
-    display: flex;
-    flex-direction: column;
+.nav-header {
+  display: flex;
+  flex-direction: column;
 }
-.insert{
-    width: 100%;
-    height: 35.1rem;
+.insert {
+  width: 100%;
+  height: 35.1rem;
 }
-.formulario{
-    margin-left: 35%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    width: 30%;
-    height: 100%;
+.formulario {
+  margin-left: 35%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  width: 30%;
+  height: 100%;
 }
 
-#imagen{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1%;
+#imagen {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1%;
 }
-.textoDetalles{
-    padding-top: 1%;
-    width: 50%;
-    height: 100%;
+.textoDetalles {
+  padding-top: 1%;
+  width: 50%;
+  height: 100%;
 }
-.cuerpo{
-    display: flex;
-    height: 100%;
+.cuerpo {
+  display: flex;
+  height: 100%;
 }
 /*.logo{
     height: 80%;
     width: 80%;
 }*/
-.textoDetalles{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+.textoDetalles {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-.home{
-    height: 100%;
-    width: 100%;
+.home {
+  height: 100%;
+  width: 100%;
 }
-.uno{
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.uno {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.dos{
-    height: 100%;
-    width: 40%;
-    background-image: url('../assets/zapatoLogo.png'); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.dos {
+  height: 100%;
+  width: 40%;
+  background-image: url("../assets/zapatoLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .bienvenida {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 89.4%;
-    width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 89.4%;
+  width: 100%;
 }
 .cabecera {
-    height: 10.6%;
-    width: 100%;
+  height: 10.6%;
+  width: 100%;
 }
-#app{
-    width: 100%;
-    height: 100%;
+#app {
+  width: 100%;
+  height: 100%;
 }
-body{
-    height: 100%;
-    width: 100%;
+body {
+  height: 100%;
+  width: 100%;
 }
-html{
-    height: 100%;
-    width: 100%;
+html {
+  height: 100%;
+  width: 100%;
 }
-.centrar{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.centrar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.tabla{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+.tabla {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
-tr{
-    width: 20%;
-    margin: 1%;
+tr {
+  width: 20%;
+  margin: 1%;
 }
-.id{
-    width: 2%;
+.id {
+  width: 2%;
 }
-td{
-    width: 10%;
+td {
+  width: 10%;
 }
-.tres{
-    width: 10%;
-    height: 2%;
+.tres {
+  width: 10%;
+  height: 2%;
 }
-.botones{
-    display: flex;
-    justify-content: space-around;
-    width: 8%;
+.botones {
+  display: flex;
+  justify-content: space-around;
+  width: 8%;
 }
-.mod{
-    margin: 1%;
+.mod {
+  margin: 1%;
 }

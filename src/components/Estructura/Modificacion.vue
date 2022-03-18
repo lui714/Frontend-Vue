@@ -83,7 +83,27 @@ export default {
     // console.log(result)
     const zapatoList = useResult(result, null, (data) => data.zapatoList);
 
-    const { mutate: Mutation } = useMutation(DeleteZapato);
+    const { mutate: Mutation } = useMutation(gql`
+      mutation Mutation($deleteZapatoId: ID!) {
+        deleteZapato(id: $deleteZapatoId) {
+          status
+          message
+          data {
+            ... on Zapato {
+              id
+              marca
+              modelo
+              publishedDate
+              thumbnailUrl
+              precio
+              longDescription
+              status
+              tallas
+            }
+          }
+        }
+      }
+    `);
 
     function borrarYActualizar(deleteZapatoId) {
       Mutation(
